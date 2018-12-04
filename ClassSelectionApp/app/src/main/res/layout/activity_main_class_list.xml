@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/swDegreeCert"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainClassList">
@@ -13,10 +12,10 @@
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Year"
         android:inputType="textPersonName"
-        android:text="@string/txtYear"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/txtDay"
         app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
@@ -37,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
         android:text="@string/LastName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
@@ -52,7 +51,6 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,7 +64,6 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -75,9 +72,9 @@
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
         android:ems="10"
         android:inputType="phone"
         android:textSize="18sp"
@@ -88,9 +85,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
         android:text="@string/Phone"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,9 +97,9 @@
         android:id="@+id/textView6"
         android:layout_width="58dp"
         android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
         android:text="@string/txtBday"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,9 +109,9 @@
         android:id="@+id/spnMonth"
         android:layout_width="92dp"
         android:layout_height="27dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
         android:entries="@array/Months"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
@@ -125,10 +122,10 @@
         android:layout_height="46dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Day"
         android:inputType="textPersonName"
-        android:text="@string/txtDay"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/spnMonth"
         app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
@@ -137,9 +134,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
         android:text="@string/cert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -148,7 +145,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/twoYr"
@@ -156,20 +153,17 @@
         app:layout_constraintTop_toBottomOf="@+id/txtYear" />
 
     <Switch
-        android:id="@+id/switch1"
-        android:layout_width="352dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:id="@+id/swDegreeCert"
+        android:layout_width="366dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:checked="true"
         android:textOff="@string/cert"
         android:textOn="@string/twoYr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnMonth"
+        app:layout_constraintTop_toBottomOf="@+id/txtDay"
         tools:checked="true" />
 
     <Spinner
@@ -181,7 +175,7 @@
         android:layout_marginRight="8dp"
         android:entries="@array/lstMajor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/swDegreeCert" />
 
     <Spinner
         android:id="@+id/spnCertificate"
@@ -196,7 +190,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/swDegreeCert" />
 
     <TextView
         android:id="@+id/lblCertificate"
@@ -212,8 +206,8 @@
         android:id="@+id/lblDegree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
         android:text="@string/txtMajor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spnDegree" />
@@ -222,10 +216,13 @@
         android:id="@+id/btnNext"
         android:layout_width="82dp"
         android:layout_height="38dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="72dp"
         android:text="@string/txtNext"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnDegree" />
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

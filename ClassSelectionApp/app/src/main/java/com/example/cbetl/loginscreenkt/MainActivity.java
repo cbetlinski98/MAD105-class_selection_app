@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView txtPassword = (TextView) findViewById(R.id.idPassword);
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
 
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     default:
                         startActivity(new Intent(MainActivity.this, MainClassList.class));
+
+
                 }
             }
         });
