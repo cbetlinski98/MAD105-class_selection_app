@@ -28,7 +28,7 @@ public class MainClassList extends AppCompatActivity {
         final EditText lastName = (EditText) findViewById(R.id.txtLastName);
         final EditText phone = (EditText) findViewById(R.id.txtPhone);
 
-        final Spinner spMonth = (Spinner) findViewById(R.id.spnMonth);
+        final Spinner spnMonth = (Spinner) findViewById(R.id.spnMonth);
         final EditText txtDay = (EditText) findViewById(R.id.txtDay);
         final EditText txtYear = (EditText) findViewById(R.id.txtYear);
 
@@ -56,7 +56,7 @@ public class MainClassList extends AppCompatActivity {
             public void onClick(View v) {
                 if (checkData()){
                     String doBirth = "";
-                    doBirth = spMonth.getSelectedItem().toString() + "/" + txtDay.getText().toString() + "/" + txtYear.getText().toString();
+                    doBirth = spnMonth.getSelectedItem().toString() + "/" + txtDay.getText().toString() + "/" + txtYear.getText().toString();
 
                     // old way
                     // startActivity(new Intent(MainClassList.this, ChooseClass.class);
