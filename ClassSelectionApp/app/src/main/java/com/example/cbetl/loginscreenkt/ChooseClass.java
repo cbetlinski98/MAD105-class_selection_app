@@ -69,7 +69,7 @@ public class ChooseClass extends AppCompatActivity {
             firstName = extras.getString("FirstName");
             lastName = extras.getString("LastName");
             phone = extras.getString("Phone");
-            birthDate = extras.getString("Birthdate");
+            birthDate = extras.getString("BirthDate");
             isDegreeCert = extras.getString("isDegreeCert");
             degreeCert = extras.getString("degreeCert");
         }

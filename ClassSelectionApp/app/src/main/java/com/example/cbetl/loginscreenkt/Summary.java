@@ -9,7 +9,7 @@ import org.w3c.dom.Text;
 public class Summary extends AppCompatActivity {
 
     private String firstName = "";
-    private String lastname = "";
+    private String lastName = "";
     private String phone = "";
     private String birthDate = "";
     private String isDegreeCert = "";
@@ -32,7 +32,7 @@ public class Summary extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             firstName = extras.getString("FirstName");
-            lastname = extras.getString("LastName");
+            lastName = extras.getString("LastName");
             phone = extras.getString("Phone");
             birthDate = extras.getString("BirthDate");
             isDegreeCert = extras.getString("isDegreeCert");
@@ -54,7 +54,7 @@ public class Summary extends AppCompatActivity {
         final TextView txtMajor = (TextView) findViewById(R.id.txtMajor);
         final TextView txtClassSchedule = (TextView) findViewById(R.id.txtClassSchedule);
 
-        txtStudent.setText(firstName + " " + lastname);
+        txtStudent.setText(firstName + " " + lastName);
         txtPhone.setText(phone);
         txtBirthDate.setText(birthDate);
         txtDegreePlan.setText(isDegreeCert);

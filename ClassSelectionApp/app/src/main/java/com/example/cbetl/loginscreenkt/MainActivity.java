@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
         String holdLogin = "Codie";
         String holdPassword = "password";
 
-        if (!holdLogin.equals(txtLogin)){
+        if (!(holdLogin.equals(txtLogin))){
             return LoginSuccess.login;
         }
 
-        if (!holdPassword.equals(txtPassword)){
+        if (!(holdPassword.equals(txtPassword))){
             return LoginSuccess.password;
         }
 
